@@ -1,5 +1,5 @@
-.header-container {
-    display: flex;
-    justify-content: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif ;
-  }
+.title {
+    text-align: center;
+    color: blue;
+    font-size: larger;
+}

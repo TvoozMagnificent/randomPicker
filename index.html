@@ -6,10 +6,41 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="header-container">
-        <h1>Escape The Navy Team's Room</h1>
-      </div>
-    
-    
+    <h1>Escape The Navy Team's Room</h1>
+    <div id="1">
+        <h2>Level 1</h2>
+        <img alt="escaped" src="image.png">
+        <label>Answer: </label><input type="number" id="l1" correct="600">
+        <button onclick="checkAnswer(1)">Submit</button>
+    </div>
+
+
+<script>
+    function checkAnswer(level) {
+        var answer = document.getElementById("l" + level).value;
+        var correct = document.getElementById("l" + level).getAttribute("correct");
+        console.log(answer, correct);
+        if (answer == correct) {
+            show(level + 1);
+        } else {
+            alert("Incorrect! Try again!");
+        }
+    }
+
+    function show(level) {
+        // Hide all divs first
+        var divs = document.querySelectorAll('div');
+        divs.forEach(function(div) {
+            div.style.display = 'none';
+        });
+
+        
+        for (var i = 1; i <= level; i++) {
+            document.getElementById(i).style.display = "block";
+        }
+    }
+
+    show(1);
+</script>
 </body>
 </html>
