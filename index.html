@@ -1,5 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+<!--            _ _
+  __ _ ___  ___(_|_)
+ / _` / __|/ __| | |
+| (_| \__ \ (__| | |
+ \__,_|___/\___|_|_|
+-->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,15 +15,78 @@
     <h1>Escape The Navy Team's Room</h1>
     <div id="1">
         <h2>Level 1</h2>
-        <img alt="escaped" src="image.png">
-        <label>Answer: </label><input type="number" id="l1" correct="600">
+        <p><img alt="escaped" src="image.png"></p>
+
+        <label>The answer is: </label><input type="number" id="l1" correct="600" onkeydown="if(event.keyCode === 13) { event.preventDefault(); checkAnswer(1); moveCursor('l2'); }">
         <button onclick="checkAnswer(1)">Submit</button>
     </div>
+    <div id="2" style="display: none;">
+        <h2>Level 2</h2>
 
+        <label>How many states of USA ends with "a"? </label><input type="number" id="l2" correct="21" onkeydown="if(event.keyCode === 13) { event.preventDefault(); checkAnswer(2); moveCursor('l3'); }">
+        <button onclick="checkAnswer(2)">Submit</button>
+    </div>
+    <div id="3" style="display: none;">
+        <h2>Level 3</h2>
+        <p>Clicking hands that never tire.</p>
+        <p>Helping us through moments of time.</p>
+        <p>Or even moments of calm we admire.</p>
+        <p>Keeping track of the seconds.</p>
+        <p>Ever and forever moving day after day.</p>
+        
+        <label>What answers the riddle: </label><input type="text" id="l3" correct="clock" onkeydown="if(event.keyCode === 13) { event.preventDefault(); checkAnswer(3); moveCursor('l4'); }">
+        <button onclick="checkAnswer(3)">Submit</button>
+    </div>
+    <div id="4" style="display: none;">
+        <h2>Level 4</h2>
+        <p>1) Functions can be continuous in open intervals.</p>
+        <p>2) In a ribonucleic acid, adenine pairs with thymine and cytosine pairs with guanine.</p>
+        <p>3) Niagara Falls is located in Canada.</p>
+        <p>4) Dogs can only see in black and white.</p>
+        <p>5) Some camels store water in their humps.</p>
+
+        <label>Put your answers in a bin: </label><input type="text" id="l4" correct="20" onkeydown="if(event.keyCode === 13) { event.preventDefault(); checkAnswer(4); moveCursor('l5'); }">
+        <button onclick="checkAnswer(4)">Submit</button>
+    </div>
+    <div id="5" style="display: none;">
+        <h2>Level 5</h2>
+        <p>Pandora the artist used various colors to create a beautiful ___________D on the canvas.</p>
+        <p>Robin the robber told his partner to ___________P the secret for him under all circumstances.</p>
+        <p>Oh sure, I'll ___________K with the professor to make sure that he is informed of the event.</p>
+        <p>Very skillfully the ___________K was cracked, making the robber the most wanted criminal in USA.</p>
+        <p>Even I think we should take a ___________K to relax; all this is a heavy load to all of us.</p>
+
+        <label>What follows: </label><input type="text" id="l5" correct="in" onkeydown="if(event.keyCode === 13) { event.preventDefault(); checkAnswer(5); moveCursor('l6'); }">
+        <button onclick="checkAnswer(5)">Submit</button>
+    </div>
+    <div id="6" style="display: none;">
+        <h2>Level 6</h2>
+        <p><span id="togglep">The start of 34n5, 35s46.</span> <button onclick="toggle()" id="togglebutton">Expand</button></p>
+
+        <label>Separate using space: </label><input type="text" id="l6" correct="choke finds prove" onkeydown="if(event.keyCode === 13) { event.preventDefault(); checkAnswer(6); moveCursor('l7'); }">
+        <button onclick="checkAnswer(6)">Submit</button>
+    </div> 
+    <div id="7" style="display: none;">
+        <h2>Level 7</h2>
+
+        <label>Fetch from the source: </label><input type="text" id="l7" correct="ascii" onkeydown="if(event.keyCode === 13) { event.preventDefault(); checkAnswer(7); moveCursor('l8'); }">
+        <button onclick="checkAnswer(7)">Submit</button>
+    </div>
+    <div id="8" style="display: none;">
+        <h2>Level 8</h2>
+        <p>Go to an alternate reality...</p>
+
+        <label>Alt src: </label><input type="text" id="l8" correct="escaped" onkeydown="if(event.keyCode === 13) { event.preventDefault(); checkAnswer(8); }">
+        <button onclick="checkAnswer(8)">Submit</button>
+    </div>
+    <div id="9" style="display: none;">
+        <h1>CONGRATULATIONS!</h1>
+        <p>You have successfully escaped the Navy Team's room!</p>
+    </div>
 
 <script>
     function checkAnswer(level) {
-        var answer = document.getElementById("l" + level).value;
+        var answer = document.getElementById("l" + level).value.toLowerCase();
         var correct = document.getElementById("l" + level).getAttribute("correct");
         console.log(answer, correct);
         if (answer == correct) {
@@ -34,12 +103,36 @@
             div.style.display = 'none';
         });
 
-        
-        for (var i = 1; i <= level; i++) {
-            document.getElementById(i).style.display = "block";
+        if (level < 9)
+            for (var i = 1; i <= level; i++) {
+                document.getElementById(i).style.display = "block";
+            }
+        else
+            document.getElementById(9).style.display = "block";
+    }
+
+    function toggle() {
+        var toggleButton = document.getElementById("togglebutton");
+        var toggleP = document.getElementById("togglep");
+
+        switch (toggleButton.innerHTML) {
+            case "Expand":
+                toggleButton.innerHTML = "Collapse";
+                toggleP.innerHTML = "The start of 3, 4, and 5; three fives for 6.";
+                break;
+            case "Collapse":
+                toggleButton.innerHTML = "Expand";
+                toggleP.innerHTML = "The start of 34n5, 35s46.";
+                break;
         }
     }
 
+    function moveCursor(nextId) {
+        var nextInput = document.getElementById(nextId);
+        nextInput.focus();
+    }
+
+    // Show the first level initially
     show(1);
 </script>
 </body>
