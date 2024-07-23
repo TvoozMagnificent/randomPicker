@@ -1,5 +1,25 @@
-.title {
-    text-align: center;
-    color: blue;
-    font-size: larger;
+h1{
+    display: flex;
+    justify-content:center;font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(21, 51, 80); 
+    color:antiquewhite;
+}
+body{
+    background-color: rgb(21,51,80);
+}
+h2 {
+    font-family: Georgia, serif;
+    color: antiquewhite;
+}
+img {
+    width: 100px;
+    height: 100px;
+}
+div{
+    background-color: rgb(49, 97, 143);
+    border-block-style: round;
+    border-block-color: rgb(49, 97, 143);
+    border-radius: 15px;
+    margin:auto;
+
 }
