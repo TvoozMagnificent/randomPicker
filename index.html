@@ -17,7 +17,8 @@
         <h2>Level 1</h2>
         <p><img alt="escaped" src="image.png"></p>
 
-        <label>The answer is: </label><input type="number" id="l1" correct="600" onkeydown="if(event.keyCode === 13) { event.preventDefault(); checkAnswer(1); moveCursor('l2'); }">
+        
+    <label>The answer is: </label><input type="number" id="l1" correct="600" onkeydown="if(event.keyCode === 13) { event.preventDefault(); checkAnswer(1); moveCursor('l2'); }">
         <button onclick="checkAnswer(1)">Submit</button>
     </div>
     <div id="2" style="display: none;">
