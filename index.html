@@ -11,140 +11,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="escaperoom.css" />
     <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 </head>
 <body>
     <h1>Escape The Navy Team's Room</h1>
-    <div id="d1">
+    <div id="1">
         <h2>Level 1</h2>
         <p><img alt="escaped" src="image.png"></p>
 
-        
-    <label>The answer is: </label><input type="number" id="l1" correct="600" onkeydown="if(event.keyCode === 13) { event.preventDefault(); checkAnswer(1); moveCursor('l2'); }">
+        <label>The answer is: </label><input type="number" id="l1" correct="600" onkeydown="if(event.keyCode === 13) { event.preventDefault(); checkAnswer(1); moveCursor('l2'); }">
         <button onclick="checkAnswer(1)">Submit</button>
     </div>
-    <div id="d2" style="display: none;">
+    <div id="2" style="display: none;">
         <h2>Level 2</h2>
 
         <label>How many states of USA ends with "a"? </label><input type="number" id="l2" correct="21" onkeydown="if(event.keyCode === 13) { event.preventDefault(); checkAnswer(2); moveCursor('l3'); }">
         <button onclick="checkAnswer(2)">Submit</button>
     </div>
-    <div id="d3" style="display: none;">
-        <h2>Level 3</h2>
-=======
-<body><div>
-    <h1 id="maintitle">Escape The Navy Team's Room</h1>
-    <p><img alt="pennlogo" src="PennLogo.png"></p>
-</div>
-    
-    <div id="d1">
-        <h2 id="lvlttl">Level 1: What Do You See? </h2>
-        <p><img alt="escaped" src="image.png"></p>
-
-        
-    
-        <label>The answer is: </label><input type="number" id="l1" correct="600" onkeydown="if(event.keyCode === 13) { event.preventDefault(); checkAnswer(1); moveCursor('l2'); }">
-        <button id="button" class="btn btn-primary rounded-pill px-3" type="button" onclick="checkAnswer(1)">Submit</button>
-    </div>
-    <div id="d2" style="display: none;">
-        <h2 id= "lvlttl">  Level 2: </h2>
-
-
-        <label id="answerbox2">How many states of USA ends with "a"? </label><input type="number" id="l2" correct="21" onkeydown="if(event.keyCode === 13) { event.preventDefault(); checkAnswer(2); moveCursor('l3'); }">
-        <button id="button" class="btn btn-primary rounded-pill px-3"  type="button" onclick="checkAnswer(2)">Submit</button>
-    </div>
-    <div id="d3" style="display: none;">
+    <div id="3" style="display: none;">
         <h2 id="lvlttl">Level 3: Riddle!</h2>
->>>>>>> 99bc9937458944d4c7e42c5e0d985a4d61c069d3
         <p>Clicking hands that never tire.</p>
         <p>Helping us through moments of time.</p>
         <p>Or even moments of calm we admire.</p>
         <p>Keeping track of the seconds.</p>
         <p>Ever and forever moving day after day.</p>
-        
-<<<<<<< HEAD
         <label>What answers the riddle: </label><input type="text" id="l3" correct="clock" onkeydown="if(event.keyCode === 13) { event.preventDefault(); checkAnswer(3); moveCursor('l4'); }">
         <button onclick="checkAnswer(3)">Submit</button>
-    </div>
-    <div id="d4" style="display: none;">
+    </div>    
+    
+    
+    <div id="4" style="display: none;">
         <h2>Level 4</h2>
-=======
-        <label id="answerbox3">What am I?: </label><input type="text" id="l3" correct="clock" onkeydown="if(event.keyCode === 13) { event.preventDefault(); checkAnswer(3); moveCursor('l4'); }">
-        <button id="button" class="btn btn-primary rounded-pill px-3"  type="button" onclick="checkAnswer(3)">Submit</button>
-    </div>
-    <div id="d4" style="display: none;">
-        <h2 id="lvlttl">Level 4: True or False</h2>
->>>>>>> 99bc9937458944d4c7e42c5e0d985a4d61c069d3
         <p>1) Functions can be continuous in open intervals.</p>
         <p>2) In a ribonucleic acid, adenine pairs with thymine and cytosine pairs with guanine.</p>
         <p>3) Niagara Falls is located in Canada.</p>
         <p>4) Dogs can only see in black and white.</p>
         <p>5) Some camels store water in their humps.</p>
 
-<<<<<<< HEAD
         <label>Put your answers in a bin: </label><input type="text" id="l4" correct="20" onkeydown="if(event.keyCode === 13) { event.preventDefault(); checkAnswer(4); moveCursor('l5'); }">
         <button onclick="checkAnswer(4)">Submit</button>
     </div>
-    <div id="d5" style="display: none;">
+    <div id="5" style="display: none;">
         <h2>Level 5</h2>
-=======
-        <label id="answerbox4">Put your answers in a bin: </label><input type="text" id="l4" correct="20" onkeydown="if(event.keyCode === 13) { event.preventDefault(); checkAnswer(4); moveCursor('l5'); }">
-        <button id="button" class="btn btn-primary rounded-pill px-3"  type="button" onclick="checkAnswer(4)">Submit</button>
-    </div>
-    <div id="d5" style="display: none;">
-        <h2 id="lvlttl">Level 5: Fill In The Blanks</h2>
->>>>>>> 99bc9937458944d4c7e42c5e0d985a4d61c069d3
-        <p>Pandora the artist used various colors to create a beautiful <input class="fill">d on the canvas.</p>
-        <p>Robin the robber told his partner to <input class="fill">p the secret for him under all circumstances.</p>
-        <p>Oh sure, I'll <input class="fill">k with the professor to make sure that he is informed of the event.</p>
-        <p>Very skillfully the <input class="fill">k was cracked, making the robber the most wanted criminal in USA.</p>
-        <p>Even I think we should take a <input class="fill">k to relax; all this is a heavy load to all of us.</p>
+        <p>Pandora the artist used various colors to create a beautiful ___________D on the canvas.</p>
+        <p>Robin the robber told his partner to ___________P the secret for him under all circumstances.</p>
+        <p>Oh sure, I'll ___________K with the professor to make sure that he is informed of the event.</p>
+        <p>Very skillfully the ___________K was cracked, making the robber the most wanted criminal in USA.</p>
+        <p>Even I think we should take a ___________K to relax; all this is a heavy load to all of us.</p>
 
-<<<<<<< HEAD
         <label>What follows: </label><input type="text" id="l5" correct="in" onkeydown="if(event.keyCode === 13) { event.preventDefault(); checkAnswer(5); moveCursor('l6'); }">
         <button onclick="checkAnswer(5)">Submit</button>
     </div>
-    <div id="d6" style="display: none;">
+    <div id="6" style="display: none;">
         <h2>Level 6</h2>
         <p><span id="togglep">The start of 34n5, 35s46.</span> <button onclick="toggle()" id="togglebutton">Expand</button></p>
 
         <label>Separate using space: </label><input type="text" id="l6" correct="choke finds prove" onkeydown="if(event.keyCode === 13) { event.preventDefault(); checkAnswer(6); moveCursor('l7'); }">
         <button onclick="checkAnswer(6)">Submit</button>
     </div> 
-    <div id="d7" style="display: none;">
+    <div id="7" style="display: none;">
         <h2>Level 7</h2>
 
         <label>Fetch from the source: </label><input type="text" id="l7" correct="ascii" onkeydown="if(event.keyCode === 13) { event.preventDefault(); checkAnswer(7); moveCursor('l8'); }">
         <button onclick="checkAnswer(7)">Submit</button>
     </div>
-    <div id="d8" style="display: none;">
+    <div id="8" style="display: none;">
         <h2>Level 8</h2>
-=======
-        <label id="answerbox5">What follows: </label><input type="text" id="l5" correct="in" onkeydown="if(event.keyCode === 13) { event.preventDefault(); checkAnswer(5); moveCursor('l6'); }">
-        <button id="button" class="btn btn-primary rounded-pill px-3"  type="button" onclick="checkAnswer(5)">Submit</button>
-    </div>
-    <div id="d6" style="display: none;">
-        <h2 id="lvlttl">Level 6</h2>
-        <p><span id="togglep">The start of 34n5, 35s46.</span> <button onclick="toggle()" id="togglebutton">Expand</button></p>
-
-        <label>Separate using space: </label><input type="text" id="l6" correct="choke finds prove" onkeydown="if(event.keyCode === 13) { event.preventDefault(); checkAnswer(6); moveCursor('l7'); }">
-        <button id="button" class="btn btn-primary rounded-pill px-3"  type="button" onclick="checkAnswer(6)">Submit</button>
-    </div> 
-    <div id="d7" style="display: none;">
-        <h2 id="lvlttl">Level 7</h2>
-
-        <label>Fetch from the source: </label><input type="text" id="l7" correct="ascii" onkeydown="if(event.keyCode === 13) { event.preventDefault(); checkAnswer(7); moveCursor('l8'); }">
-        <button id="button" class="btn btn-primary rounded-pill px-3"  type="button" onclick="checkAnswer(7)">Submit</button>
-    </div>
-    <div id="d8" style="display: none;">
-        <h2 id="lvlttl">Level 8</h2>
->>>>>>> 99bc9937458944d4c7e42c5e0d985a4d61c069d3
         <p>Go to an alternate reality...</p>
 
         <label>Alt src: </label><input type="text" id="l8" correct="escaped" onkeydown="if(event.keyCode === 13) { event.preventDefault(); checkAnswer(8); }">
         <button onclick="checkAnswer(8)">Submit</button>
     </div>
-    <div id="d9" style="display: none;">
+    <div id="9" style="display: none;">
         <h1>CONGRATULATIONS!</h1>
         <p>You have successfully escaped the Navy Team's room!</p>
     </div>
@@ -170,10 +107,10 @@
 
         if (level < 9)
             for (var i = 1; i <= level; i++) {
-                document.getElementById("d" + i).style.display = "block";
+                document.getElementById(i).style.display = "block";
             }
         else
-            document.getElementById("d" + 9).style.display = "block";
+            document.getElementById(9).style.display = "block";
     }
 
     function toggle() {
@@ -200,10 +137,5 @@
     // Show the first level initially
     show(1);
 </script>
-<<<<<<< HEAD
-=======
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-
->>>>>>> 99bc9937458944d4c7e42c5e0d985a4d61c069d3
 </body>
 </html>
