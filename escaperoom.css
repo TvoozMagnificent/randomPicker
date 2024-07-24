@@ -26,7 +26,6 @@ div{
     border-block-style: solid;
     border-block-color: #e1e1e1b2;
     background-color: #e1e1e1b2;
-    display:inline;
     border-radius: 50px
 }
 #d2{
@@ -38,7 +37,6 @@ div{
 
     background-color:#7faeefb2;
 
-    display:inline;
     border-radius: 50px
 
 }
