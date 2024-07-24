@@ -1,5 +1,5 @@
 body{
-  background-color: rgb(21, 51, 80);
+  background-image:url(b864ff7c-ea69-4840-a0c3-e8b8c849fb00.jpeg);
 }
 h1{
   display: flex;
@@ -8,9 +8,74 @@ h1{
   color:antiquewhite;
 }
 
-div{
-  background-color: white;
+#d1{
   border-block-style: solid;
-  border-block-color: white;
+  border-block-color: rgba(225, 225, 225, 0.7);
+  background-color:rgba(225, 225, 225, 0.7);
+  display:inline;
+  border-radius: 50px
 }
 
+h2{
+  display:flex;
+  justify-content:center;
+}
+
+img{
+  width:350px;
+  border-radius:100px;
+  display:inline;
+  opacity:1.0;
+}
+p{
+  display:inline;
+  font-size:200px;
+}
+
+#d2{
+  border-block-style: solid;
+  border-block-color: rgba(225, 225, 225, 0.7);
+  background-color:rgba(225, 225, 225, 0.7);
+  display:inline;
+  border-radius: 50px
+}
+
+#d3{
+  border-block-style: solid;
+  border-block-color: rgba(225, 225, 225, 0.7);
+  background-color:rgba(225, 225, 225, 0.7);
+  display:inline;
+  border-radius: 50px
+}
+
+#d4{
+  border-block-style: solid;
+  border-block-color: rgba(225, 225, 225, 0.7);
+  background-color:rgba(225, 225, 225, 0.7);
+  display:inline;
+  border-radius: 50px
+}
+
+#d5{
+  border-block-style: solid;
+  border-block-color: rgba(225, 225, 225, 0.7);
+  background-color:rgba(225, 225, 225, 0.7);
+  display:inline;
+  border-radius: 50px
+}
+
+#d6{
+  border-block-style: solid;
+  border-block-color: rgba(225, 225, 225, 0.7);
+  background-color:rgba(225, 225, 225, 0.7);
+  display:inline;
+  border-radius: 50px
+}
+
+#d7{
+  border-block-style: solid;
+  border-block-color: rgba(225, 225, 225, 0.7);
+  background-color:rgba(225, 225, 225, 0.7);
+  display:inline;
+  border-radius: 50px
+}
