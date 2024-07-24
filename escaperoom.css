@@ -54,44 +54,40 @@ div{
 }
 #d4{
     display: flex;
-    background-color: #95ADDA;
     padding-top: 75px;
     padding-bottom: 75px;
-    border-block-color: rgba(225, 225, 225, 0.7);
-    background-color:rgba(225, 225, 225, 0.7);
+    border-block-color: rgba(84, 116, 152, 0.7);
+    background-color:rgba(84, 116, 152, 0.7);
     display:inline;
     border-radius: 50px
 
 }
 #d5{
     display: flex;
-    background-color: #86A2D5;
     padding-top: 75px;
     padding-bottom: 75px;
-    border-block-color: rgba(225, 225, 225, 0.7);
-    background-color:rgba(225, 225, 225, 0.7);
+    border-block-color: rgba(71, 103, 129, 0.7);
+    background-color:rgba(71, 103, 129, 0.7);
     display:inline;
     border-radius: 50px
 
 }
 #d6{
     display: flex;
-    background-color: #7796CF;
     padding-top: 150px;
     padding-bottom: 150px;
-    border-block-color: rgba(225, 225, 225, 0.7);
-    background-color:rgba(225, 225, 225, 0.7);
+    border-block-color: rgba(73, 136, 188, 0.7);
+    background-color:rgba(73, 136, 188, 0.7);
     display:inline;
     border-radius: 50px
 
 }
 #d7{
     display: flex;
-    background-color: #5B7FC2;
     padding-top: 150px;
     padding-bottom: 150px;
-    border-block-color: rgba(225, 225, 225, 0.7);
-    background-color:rgba(225, 225, 225, 0.7);
+    border-block-color: rgba(44, 105, 148, 0.7);
+    background-color:rgba(44, 105, 148, 0.7);
     display:inline;
     border-radius: 50px
 }
